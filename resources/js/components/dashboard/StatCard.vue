@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Card, CardContent, CardHeader, CardTitle } from '@/Components/ui/card';
 import { Skeleton } from '@/Components/ui/skeleton';
-import type { Component } from 'vue';
+import type { Component, PropType } from 'vue';
 
 type FormatterFn = (value: unknown) => string;
 
@@ -19,7 +19,7 @@ const props = defineProps({
         default: '',
     },
     icon: {
-        type: Object as () => Component,
+        type: Function as PropType<Component>, // Changed from Object to Function
         required: true,
     },
     loading: {

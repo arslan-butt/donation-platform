@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import StatCard from '@/components/dashboard/StatCard.vue';
+import StatCardSkeleton from '@/components/dashboard/StatCardSkeleton.vue';
 import { useFormatters } from '@/composables/useFormatters';
 import AppLayout from '@/layouts/AppLayout.vue';
 import { type BreadcrumbItem } from '@/types';
@@ -10,11 +11,11 @@ const { currency, number } = useFormatters();
 
 defineProps<{
     user_count?: number;
-    active_campaigns: number;
-    completed_campaigns: number;
-    total_raised: number;
-    total_donations: number;
-    total_campaigns: number;
+    active_campaigns?: number;
+    completed_campaigns?: number;
+    total_raised?: number;
+    total_donations?: number;
+    total_campaigns?: number;
 }>();
 const breadcrumbs: BreadcrumbItem[] = [
     {
