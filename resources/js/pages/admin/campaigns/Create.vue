@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import CreateOrUpdate from '@/Components/CreateOrUpdate.vue';
+import CreateOrUpdate from '@/components/CreateOrUpdate.vue';
 </script>
 
 <template>

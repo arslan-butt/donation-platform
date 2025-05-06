@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import CampaignCard from '@/Components/campaign/Card.vue';
-import CampaignFilters from '@/Components/campaign/Filters.vue';
-import Heading from '@/Components/Heading.vue';
-import AppLayout from '@/Layouts/AppLayout.vue';
+import CampaignCard from '@/components/campaign/Card.vue';
+import CampaignFilters from '@/components/campaign/Filters.vue';
+import Heading from '@/components/Heading.vue';
+import AppLayout from '@/layouts/AppLayout.vue';
 import type { CampaignStatus, Category, Paginatedcampaigns, Pagination } from '@/types';
 import { Deferred, Head, WhenVisible } from '@inertiajs/vue3';
 import { computed } from 'vue';

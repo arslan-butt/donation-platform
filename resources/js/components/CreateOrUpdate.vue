@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Heading from '@/Components/Heading.vue';
+import Heading from '@/components/Heading.vue';
 import AppFormLayout from '@/layouts/AppFormLayout.vue';
 import AppLayout from '@/layouts/AppLayout.vue';
 import { type BreadcrumbItem } from '@/types';

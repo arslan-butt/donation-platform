@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { Card, CardContent, CardHeader, CardTitle } from '@/Components/ui/card';
-import { Skeleton } from '@/Components/ui/skeleton';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Skeleton } from '@/components/ui/skeleton';
 import type { Component, PropType } from 'vue';
 
 type FormatterFn = (value: unknown) => string;

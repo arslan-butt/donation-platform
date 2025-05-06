@@ -1,9 +1,9 @@
 <script setup lang="ts">
-// import CustomStatusBadge from '@/Components/CustomStatusBadge.vue';
-import DataTable from '@/Components/DataTable.vue';
-import Heading from '@/Components/Heading.vue';
-import StatusBadge from '@/Components/StatusBadge.vue';
-import AppLayout from '@/Layouts/AppLayout.vue';
+// import CustomStatusBadge from '@/components/CustomStatusBadge.vue';
+import DataTable from '@/components/DataTable.vue';
+import Heading from '@/components/Heading.vue';
+import StatusBadge from '@/components/StatusBadge.vue';
+import AppLayout from '@/layouts/AppLayout.vue';
 import { type BreadcrumbItem, PaginatedCampaigns } from '@/types';
 import { Head } from '@inertiajs/vue3';
 import { computed, markRaw, ref } from 'vue';

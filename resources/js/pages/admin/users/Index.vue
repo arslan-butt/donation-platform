@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import DataTable from '@/Components/DataTable.vue';
-import Heading from '@/Components/Heading.vue';
-import AppLayout from '@/Layouts/AppLayout.vue';
+import DataTable from '@/components/DataTable.vue';
+import Heading from '@/components/Heading.vue';
+import AppLayout from '@/layouts/AppLayout.vue';
 import { type BreadcrumbItem, PaginatedUsers } from '@/types';
 import { Head } from '@inertiajs/vue3';
 import { computed, defineProps } from 'vue';

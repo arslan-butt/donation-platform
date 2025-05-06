@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import AppPagination from '@/Components/AppPagination.vue';
+import AppPagination from '@/components/AppPagination.vue';
 import DeleteItem from '@/components/DeleteItem.vue';
 import { Button } from '@/components/ui/button';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import CreateOrUpdate from '@/Components/CreateOrUpdate.vue';
+import CreateOrUpdate from '@/components/CreateOrUpdate.vue';
 import { type Campaign, type SharedData } from '@/types';
 import { usePage } from '@inertiajs/vue3';
 
