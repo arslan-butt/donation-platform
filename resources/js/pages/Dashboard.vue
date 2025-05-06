@@ -1,0 +1,14 @@
+<script setup lang="ts">
+import { usePermissions } from '@/composables/usePermissions';
+import AdminDashboard from '@/Pages/dashboard/AdminDashboard.vue';
+import UserDashboard from '@/Pages/dashboard/UserDashboard.vue';
+
+const { isAdmin } = usePermissions();
+</script>
+
+<template>
+    <div>
+        <AdminDashboard v-if="isAdmin" />
+        <UserDashboard v-else />
+    </div>
+</template>
