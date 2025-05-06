@@ -8,7 +8,7 @@ import { Activity, CheckCircle, DollarSign, HeartHandshake, LayoutGrid } from 'l
 
 const { currency, number } = useFormatters();
 
-const props = defineProps<{
+defineProps<{
     user_count?: number;
     active_campaigns: number;
     completed_campaigns: number;

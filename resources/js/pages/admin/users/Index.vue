@@ -38,7 +38,6 @@ const columns = [
 const breadcrumbs: BreadcrumbItem[] = [{ title: 'Users', href: '/users' }];
 
 const resource = 'users';
-const hasEditPermission = computed(() => true);
 const createRoute = computed(() => `${resource}.create`);
 const title = 'User management';
 const description = 'Manage  users';

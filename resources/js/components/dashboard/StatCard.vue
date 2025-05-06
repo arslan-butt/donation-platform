@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { Card, CardContent, CardHeader, CardTitle } from '@/Components/ui/card';
 import { Skeleton } from '@/Components/ui/skeleton';
-import { useFormatters } from '@/Composables/useFormatters';
 import type { Component } from 'vue';
 
 type FormatterFn = (value: unknown) => string;
@@ -32,8 +31,6 @@ const props = defineProps({
         default: (val: unknown) => String(val),
     },
 });
-
-const { currency, number, percent } = useFormatters();
 </script>
 
 <template>
