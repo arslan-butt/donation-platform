@@ -27,14 +27,14 @@ it('allows user to create a donation', function () {
 
     // Create a campaign
     $campaign = Campaign::factory()->create();
-
+    $donatedAt = now()->toDateTimeString();
     // Donation data
     $donationData = [
         'campaign_id' => $campaign->id,
         'amount' => 100,
         'payment_reference' => Str::random(10),
         'status' => 'completed',
-        'donated_at' => now(),
+        'donated_at' => $donatedAt,
     ];
 
     // Make a donation request using the HTTP helper provided by Pest
@@ -47,7 +47,7 @@ it('allows user to create a donation', function () {
         'amount' => 100,
         'payment_reference' => $donationData['payment_reference'],
         'status' => 'completed',
-        'donated_at' => now(),
+        'donated_at' => $donatedAt,
     ]);
 
     // Assert the user is redirected back with a success message
