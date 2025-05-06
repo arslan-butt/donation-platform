@@ -5,7 +5,7 @@ import type { Component, PropType } from 'vue';
 
 type FormatterFn = (value: unknown) => string;
 
-const props = defineProps({
+defineProps({
     title: {
         type: String,
         required: true,
