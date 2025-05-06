@@ -38,8 +38,8 @@ class Campaign extends Model
     ];
 
     protected $appends = ['formatted_target_amount', 'progress_percentage'];
-    // Relationships
 
+    // Relationships
     public function author(): BelongsTo
     {
         return $this->belongsTo(User::class, 'created_by');

@@ -12,8 +12,6 @@ class CreateCategory
         return Category::create([
             'name' => $data['name'],
             'description' => $data['description'] ?? null,
-            'created_by' => $user->id,
-            'updated_by' => $user->id,
         ]);
     }
 }

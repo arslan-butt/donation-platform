@@ -12,7 +12,6 @@ class UpdateCategory
         $category->update([
             'name' => $data['name'],
             'description' => $data['description'] ?? null,
-            'updated_by' => $user->id,
         ]);
 
         return $category->fresh();

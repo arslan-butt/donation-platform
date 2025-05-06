@@ -20,17 +20,17 @@ class Payment extends Model
     // Define the casts for attributes
     protected $casts = [
         'raw_response' => 'array', // Cast raw_response to an array
-        'paid_at' => 'datetime', // Ensure paid_at is cast to a datetime object
+        'paid_at' => 'datetime',
     ];
 
     // Define relationships
     public function donation()
     {
-        return $this->belongsTo(Donation::class); // Each payment belongs to a donation
+        return $this->belongsTo(Donation::class);
     }
 
     public function paymentMethod()
     {
-        return $this->belongsTo(PaymentMethod::class); // Each payment uses a payment method
+        return $this->belongsTo(PaymentMethod::class);
     }
 }
