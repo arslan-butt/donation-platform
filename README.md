@@ -2,6 +2,9 @@
 
 An internal platform for employee donations and CSR initiatives at ACME Corp.
 
+[![tests](https://github.com/arslan-butt/donation-platform/actions/workflows/tests.yml/badge.svg)](https://github.com/arslan-butt/donation-platform/actions/workflows/tests.yml)
+[![linter](https://github.com/arslan-butt/donation-platform/actions/workflows/lint.yml/badge.svg)](https://github.com/arslan-butt/donation-platform/actions/workflows/lint.yml)
+
 ## 🚀 Installation
 
 1. **Clone the repository**
